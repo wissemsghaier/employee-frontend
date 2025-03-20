@@ -116,7 +116,7 @@ const AuthProvider = ({ children }) => {
                 const token = localStorage.getItem("token");
 
                 if (token) {
-                    const response = await axios.get("https://employee-api-nu.vercel.app/api/auth/verify", {
+                    const response = await axios.get("https://employee-api-azure.vercel.app/api/auth/verify", {
                         headers: {
                             Authorization: `Bearer ${token}`,
                         },

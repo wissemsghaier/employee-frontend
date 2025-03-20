@@ -253,7 +253,7 @@ const Add = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("https://employee-api-nu.vercel.app/api/employee/add", formData, {
+            const response = await axios.post("https://employee-api-azure.vercel.app/api/employee/add", formData, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
