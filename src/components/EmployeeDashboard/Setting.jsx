@@ -151,7 +151,7 @@ const Setting = () => {
     } else {
       try {
         const response = await axios.put(
-          "http://localhost:3000/api/setting/change-password",
+          "https://employee-api-sepia.vercel.app/api/setting/change-password",
           setting,
           {
             headers: {

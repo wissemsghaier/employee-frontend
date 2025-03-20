@@ -15,7 +15,7 @@ const Detail = () => {
             setLoading(true);
             setError(null); // Reset error before fetching
             try {
-                const response = await axios.get(`http://localhost:3000/api/leave/detail/${id}`, {
+                const response = await axios.get(`https://employee-api-sepia.vercel.app/api/leave/detail/${id}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },
@@ -50,7 +50,7 @@ const Detail = () => {
 
   const changeStatus = async (id, status) => {
     try {
-      const response = await axios.put(`http://localhost:3000/api/leave/${id}`, {status},{
+      const response = await axios.put(`https://employee-api-sepia.vercel.app/api/leave/${id}`, {status},{
           headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
