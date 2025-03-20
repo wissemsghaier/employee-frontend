@@ -15,7 +15,7 @@ const Login = () => {
         e.preventDefault()
         try {
             const response = await axios.post(
-                "https://employee-api-nu.vercel.app/api/auth/login",
+                "https://employee-api-azure.vercel.app/api/auth/login",
                 {email, password,}
             );
             if (response.data.success) {

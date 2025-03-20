@@ -36,7 +36,7 @@ const Edit = () => {
         const fetchEmployee = async () => {
             setLoading(true);  // Set loading to true when fetching data
             try {
-                const responnse = await axios.get(`http://localhost:3000/api/employee/${id}`, {
+                const responnse = await axios.get(`https://employee-api-azure.vercel.app/api/employee/${id}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },
