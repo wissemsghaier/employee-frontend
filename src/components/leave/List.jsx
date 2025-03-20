@@ -154,11 +154,11 @@ const List = () => {
                 // Déterminer l'URL correcte en fonction du rôle et du contexte
                 let url;
                 if (user.role === "employee") {
-                    url = `https://employee-api-azure.vercel.app/api/leave/${user._id}`; // Employé : ses propres congés
+                    url = `http://localhost:3000/api/leave/${user._id}`; // Employé : ses propres congés
                 } else if (user.role === "admin" && id) {
-                    url = `https://employee-api-azure.vercel.app/api/leave/${id}`; // Admin : congés d'un employé spécifique
+                    url = `http://localhost:3000/api/leave/${id}`; // Admin : congés d'un employé spécifique
                 } else {
-                    url = "https://employee-api-azure.vercel.app/api/leave/"; // Admin : tous les congés
+                    url = "http://localhost:3000/api/leave/"; // Admin : tous les congés
                 }
 
                 const response = await axios.get(url, {

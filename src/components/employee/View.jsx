@@ -12,7 +12,7 @@ const View = () => {
     const fetchEmployee = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`https://employee-api-azure.vercel.app/api/employee/${id}`, {
+        const response = await axios.get(`http://localhost:3000/api/employee/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

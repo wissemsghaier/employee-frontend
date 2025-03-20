@@ -23,7 +23,7 @@ const Add = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("https://employee-api-azure.vercel.app/api/leave/add", 
+            const response = await axios.post("http://localhost:3000/api/leave/add", 
                 leave, // ✅ Envoi des données dans le body
                 {
                     headers: {
