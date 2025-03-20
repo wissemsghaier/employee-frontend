@@ -12,7 +12,7 @@ const EditDepartment = () => {
         const fetchDepartments = async () => {
             setDeploading(true)
             try {
-                const responnse = await axios.get(`http://localhost:3000/api/department/${id}`,{
+                const responnse = await axios.get(`https://employee-api-nu.vercel.app/api/department/${id}`,{
                   headers: {
                     Authorization : `Bearer ${localStorage.getItem('token')}`
                   }  

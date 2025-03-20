@@ -76,7 +76,7 @@ const Edit = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.put(`http://localhost:3000/api/employee/${id}`, employee, {
+            const response = await axios.put(`https://employee-api-nu.vercel.app/api/employee/${id}`, employee, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

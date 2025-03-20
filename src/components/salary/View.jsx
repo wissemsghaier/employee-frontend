@@ -22,7 +22,7 @@ const View = () => {
         throw new Error("Token non trouvé. Veuillez vous reconnecter.");
       }
 
-      const response = await axios.get(`http://localhost:3000/api/salary/${id}`, {
+      const response = await axios.get(`https://employee-api-nu.vercel.app/api/salary/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

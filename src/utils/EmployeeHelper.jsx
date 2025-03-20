@@ -65,7 +65,7 @@ export const getEmployees = async (id) => {
     let employees;
 
     try {
-        const response = await axios.get(`http://localhost:3000/api/employee/department/${id}`, {
+        const response = await axios.get(`https://employee-api-nu.vercel.app/api/employee/department/${id}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
             }, 
